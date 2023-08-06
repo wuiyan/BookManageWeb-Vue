@@ -180,8 +180,8 @@ requests.get("/book/info")
         <td>{{ info.desc }}</td>
         <td>{{ info.price + '元'}}</td>
         <td>
-            <a href="#" @click="deleteBookInfo(info.bid)" class="button-link">删除</a>
-            <a href="#" @click="getTableRow(info.bid)"  class="button-link">修改</a>
+            <a style="cursor: pointer;" @click="deleteBookInfo(info.bid)" class="button-link">删除</a>
+            <a style="cursor: pointer;" @click="getTableRow(info.bid)"  class="button-link">修改</a>
         </td>
     </tr>
     </tbody>

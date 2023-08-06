@@ -10,7 +10,6 @@ function changeView(){
         console.log(selectbook.value)
         console.log(selectstudent.value)
         console.log(document.getElementById("date").value)
-
         setTime();
         // document.getElementById("confirmButton").onclick = submitInput;
         document.getElementById("changeBookInterfaceOuter").setAttribute("style","display:block;opacity: 1;");
@@ -190,7 +189,7 @@ requests.get("/student/info")
         <td>{{ info.student.name }}</td>
         <td>{{ info.student.sid }}</td>
         <td>{{ info.date }}</td>
-        <td><a class="button-link" href="#" @click="deleteBorrow(info.id)" >归还</a></td>
+        <td><a class="button-link" style="cursor: pointer;" @click="deleteBorrow(info.id)" >归还</a></td>
     </tr>
 
     </tbody>
